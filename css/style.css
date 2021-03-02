@@ -1,0 +1,394 @@
+a {
+	text-decoration: none;
+	color: white;
+}
+body {
+	color: white;
+	font-family: Roboto;
+	font-size: 14px;
+	background-color: black;
+}
+/* *{
+	border: 1px solid red !important;
+} */
+.header {
+	border-bottom: 1px solid #d4d4d4;
+}
+.header__container {
+	padding: 10px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 32.5px;
+}
+.header__logo {
+	margin: 8px 0;
+}
+.header__logo img {
+}
+.header__menu {
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+}
+.header__item {
+	margin-left: 42px;
+	list-style-type: none;
+	transition: all 0.3s ease;
+}
+.header__item:hover {
+	color: #d8670d;
+}
+.movie {
+	position: relative;
+	padding-top: 70px;
+	padding-bottom: 90px;
+}
+.movie:after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	border: 1px solid #d8670d;
+	box-shadow: 0px 0px 12px 1px #d8670d;
+	height: 0px;
+}
+.movie__container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.movie__poster {
+	/* margin-right: 60px; */
+	margin-right: 4%;
+	text-align: center;
+	flex: 0 1 358px;
+}
+.movie__poster img {
+	max-width: 100%;
+}
+
+.movie__trailer1 {
+	margin-left: 40px;
+	margin-top: 28px;
+	display: none;
+	margin-bottom: 55px;
+}
+.movie__about {
+	/* max-width: 515px; */
+	flex: 0 1 535px;
+	flex-wrap: wrap;
+}
+
+.movie__title {
+	flex-basis: 100%;
+	font-weight: 900;
+	font-size: 36px;
+	margin-bottom: 12px;
+}
+.movie__undertitle {
+	font-size: 18px;
+	color: #a5a5a5;
+	margin-bottom: 33px;
+}
+.movie__age {
+	color: #363636;
+	margin-left: 12px;
+}
+.movie__text {
+	line-height: 21px;
+	margin-bottom: 32px;
+}
+.movie__general {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	font-size: 16px;
+	line-height: 19px;
+	color: #b7b7b7;
+	flex-wrap: wrap;
+}
+.movie__general-left {
+	flex: 0 0 calc(50%-20px);
+	display: flex;
+	justify-content: space-between;
+	margin-right: 20px;
+}
+.movie__general-left-left {
+	font-weight: bold;
+}
+.movie__general-left-left p {
+	width: 100px;
+	padding-right: 20px;
+	margin-right: 10px;
+}
+.movie__general-item {
+	margin-bottom: 16px;
+}
+.movie__general-left-right {
+	flex: 0 0 calc(50%-5px);
+}
+.movie__general-right {
+	flex: 0 0 calc(50%-20px);
+	display: flex;
+	justify-content: space-between;
+}
+.movie__general-right-left {
+	flex: 0 0 calc(50%-5px);
+	font-weight: bold;
+}
+.movie__general-right-left p {
+	width: 100px;
+	padding-right: 30px;
+	margin-right: 10px;
+}
+.movie__general-right-right {
+	flex: 0 0 calc(50%-5px);
+}
+.movie__ratingAndTrailer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.movie__rating {
+	flex: 0 0 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 80px;
+}
+.movie__rating-percent {
+	border: 2px solid #7dbacd;
+	border-radius: 10px;
+	padding: 35px 25px;
+	font-weight: bold;
+	font-size: 28px;
+	color: #7dbacd;
+	margin-right: 34px;
+}
+.movie__rating-text {
+	font-weight: bold;
+	font-size: 18px;
+}
+.movie__trailer2 {
+	position: relative;
+	justify-self: center;
+}
+.trailer {
+	position: relative;
+	font-size: 16px;
+	color: #7dbacd;
+}
+.trailer:before {
+	content: url(../img/icons/play.svg);
+	position: absolute;
+	left: -40px;
+	top: -5px;
+}
+.movie__trailer2:before {
+	content: url(../img/icons/play.svg);
+	position: absolute;
+	left: -40px;
+	top: -5px;
+}
+
+
+.people {
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+.people__container {
+	display: flex;
+	flex-direction: column;
+}
+.people__titles {
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 60px;
+}
+.people__titles span {
+	margin-right: 30px;
+}
+.people__actors {
+}
+.people__creators {
+}
+.people__row {
+}
+.people__actorsgroup {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.people__item {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	flex: 1 0 275px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 35px;
+	justify-self: flex-start;
+	padding-right: 18px;
+}
+.people__item-img {
+	margin-right: 20px;
+}
+.people__item-main {
+	display: flex;
+	flex-direction: column;
+}
+.people__item-name {
+	color: #7dbacd;
+	margin-bottom: 6px;
+}
+.people__item-undername {
+	color: #a5a5a5;
+}
+.people__creatorsgroup {
+}
+
+.news {
+	padding-top: 70px;
+	padding-bottom: 100px;
+	background-color: #f3f3f3;
+	color: black;
+}
+.news__container {
+	display: flex;
+	flex-direction: column;
+}
+.news__title {
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 65px;
+}
+.news__row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.news__item {
+	flex: 0 0 calc(25% - 30px);
+	background-color: white;
+	padding: 30px 30px 20px;
+	margin-right: 30px;
+}
+.news__item:last-child {
+	/* margin-right: 0; */
+}
+.news__item-date {
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 14px;
+}
+.news__item-text {
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 16px;
+}
+.footer {
+}
+.footer__container {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+	line-height: 23px;
+}
+.footer__rights {
+}
+.footer__madeby {
+}
+
+.newheader {
+	background-color: gold;
+}
+.newheader__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: black;
+}
+
+
+@media (max-width: 992px) {
+	.movie{
+		padding-top: 30px;
+	}
+	.movie__trailer1 {
+		display: inline-block;
+	}
+	.movie__trailer2 {
+		display: none;
+	}
+	.movie__container {
+		flex-direction: column;
+	}
+	.movie__poster{
+		margin: 0 auto;
+	}
+	.movie__age{
+		display: none;
+	}
+	.movie__general {
+		margin-bottom: 40px;
+		justify-content: flex-start;
+	}
+	.movie__rating{
+		justify-content: start;
+	}
+	.movie{
+		border-bottom: 1px solid #D4D4D4;
+		padding-bottom: 40px;
+	}
+	.movie:after{
+		display: none;
+	}
+	.movie__general-item{
+		color:white;
+	}
+	.people__titles{
+		font-size: 18px;
+		line-height: 21px;
+	}
+	.news__item{
+		flex: 0 0 calc(50% - 30px);
+		margin-bottom: 30px;
+	}
+
+}
+@media(max-width:576px){
+	.header__menu{
+		display: none;
+	}
+	.people__item-img img{
+		width: 60px;
+	}
+	.header__logo img{
+		width: 55px;
+	}
+	.footer__container{
+		flex-direction: column;
+	}
+	.news__item{
+		flex: 0 0 100%;
+	}
+	.news__row:last-child{
+		margin-bottom: 0px;
+	}
+
+}
+
