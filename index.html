@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<title>Document</title>
 </head>
 
@@ -18,9 +19,9 @@
 				<img src="img/icons/MKlogo.png" alt="logo">
 			</div>
 			<div class="header__menu">
-				<a href="#" class="header__item">О фильме</a>
-				<a href="#" class="header__item">Актеры</a>
-				<a href="#" class="header__item">Новости</a>
+				<a href="#movie" class="header__item">О фильме</a>
+				<a href="#people" class="header__item">Актеры</a>
+				<a href="#news" class="header__item">Новости</a>
 			</div>
 			<div class="header__burger-menu">
 				<a href="#" class="header__item">Фильмы</a>
@@ -39,7 +40,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="movie">
+	<section id="movie" class="movie">
 		<div class="movie__container container">
 			<div class="movie__poster">
 				<img src="img/poster.png" alt="">
@@ -91,7 +92,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="people">
+	<section id="people" class="people">
 		<div class="people__container container">
 			<div class="people__titles">
 				<span class="people__actors actorsgroup">Актеры</span>
@@ -250,28 +251,33 @@
 
 		</div>
 	</section>
-	<section class="news">
+	<section id="news" class="news">
 		<div class="news__container container">
 			<div class="news__title">Новости по теме</div>
 			<div class="news__row">
-				<div class="news__item">
+				<div class="news__row-container">
+				<div class="news__item news__item1 ">
 					<div class="news__item-date">18 февраля 2021</div>
-					<div class="news__item-text">«Прикончи его!»: Вышел трейлер новой экранизации «Mortal Kombat»</div>
+					<a href="#" class="news__item-text">«Прикончи его!»: Вышел трейлер новой экранизации «Mortal Kombat»</a>
 				</div>
-				<div class="news__item">
+				<div class="news__item news__item2">
 					<div class="news__item-date">15 февраля 2021</div>
-					<div class="news__item-text">Режиссер Саймон Маккуойд и актер Хироюки Санада рассказывают о новом
-						«Мортал Комбат». А мы смотрим на первые кадры!</div>
+					<a href="#" class="news__item-text">Режиссер Саймон Маккуойд и актер Хироюки Санада рассказывают о новом
+						«Мортал Комбат». А мы смотрим на первые кадры!</a>
 				</div>
-				<div class="news__item">
+				<div class="news__item news__item3">
 					<div class="news__item-date">1 января 2021</div>
-					<div class="news__item-text">Что смотреть в 2021 году: 50 самых ожидаемых фильмов</div>
+					<a href="#" class="news__item-text">Что смотреть в 2021 году: 50 самых ожидаемых фильмов</a>
 				</div>
-				<div class="news__item">
+				<div class="news__item news__item4">
 					<div class="news__item-date">6 марта 2020</div>
-					<div class="news__item-text">Реалистичные драки и минимум спецэффектов: Что было на съемках
-						«Смертельной битвы»</div>
+					<a href="#" class="news__item-text">Реалистичные драки и минимум спецэффектов: Что было на съемках
+						«Смертельной битвы»</a>
 				</div>
+				<div class="news__arrow">
+					<img src="img/icons/arrow.svg" alt="">
+				</div>
+			</div>
 			</div>
 		</div>
 	</section>
@@ -281,6 +287,7 @@
 			<div class="footer__madeby">Made by xenista</div>
 		</div>
 	</section>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
