@@ -19,8 +19,8 @@ $(document).ready(function() {
 	});
 	if($(window).width()<=576){
 		$('.news__row-container').addClass('slider');
-		$('.slider>div:first-child').addClass('selected');
-		$('.news__arrow').addClass('selected');
+		$('.slider>div:first-child').addClass('news__selected');
+		$('.news__arrow').addClass('news__selected');
 	}
 	else if($(window).width()>576){
 		$('.news__row-container').removeClass('slider');
@@ -31,31 +31,33 @@ $(document).ready(function() {
 	$(window).resize(function(){
 		if(($(window).width()<=576)&& (!$('.news__row-container').hasClass('slider'))){
 			$('.news__row-container').addClass('slider');
-			$('.slider>div:first-child').addClass('selected');
-			$('.news__arrow').addClass('selected');
+			$('.slider>div:first-child').addClass('news__selected');
+			$('.news__arrow').addClass('news__selected');
 		}
 		else if($(window).width()>576){
 			$('.news__row-container').removeClass('slider');
-			$('.news *').removeClass('selected');
+			$('.news *').removeClass('news__selected');
 			$('.news__arrow').removeClass('disable');
 		}
 		});
 
 	$('.news__arrow').click(function (event) {
+		// event.preventDefault();
 		if($('.news__arrow').hasClass('backward')){
-			$('.news__item.selected').prev().addClass('selected');
-			$('.news__item.selected:last').removeClass('selected');
-			if($('.news__item:first').hasClass('selected')){
+			$('.news__item.news__selected').prev().addClass('news__selected');
+			$('.news__item.news__selected:last').removeClass('news__selected');
+			if($('.news__item:first').hasClass('news__selected')){
 				$('.news__arrow').removeClass('backward');
 			}
 		}
 		else{
-			$('.selected').next().addClass('selected');
-			$('.slider .news__item.selected:first').removeClass('selected');
-			if($('.news__arrow').prev().hasClass('selected')){
+			$('.news__selected').next().addClass('news__selected');
+			$('.slider .news__item.news__selected:first').removeClass('news__selected');
+			if($('.news__arrow').prev().hasClass('news__selected')){
 				$(this).addClass('backward');
 			}
 		}
+		// return false;
 	});
 });
 

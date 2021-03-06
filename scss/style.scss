@@ -532,7 +532,7 @@ body {
 		height: 204px;
 	}
 }
-.slider > :not(.selected) {
+.slider > :not(.news__selected) {
 	display: none;
 }
 
@@ -576,7 +576,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 105vh;
-	width: 105%;
+	width: 100%;
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.3s ease-in-out;

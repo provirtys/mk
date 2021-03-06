@@ -720,7 +720,7 @@ body.lock {
   }
 }
 
-.slider > :not(.selected) {
+.slider > :not(.news__selected) {
   display: none;
 }
 
@@ -775,7 +775,7 @@ body.lock {
       -ms-flex-pack: center;
           justify-content: center;
   height: 105vh;
-  width: 105%;
+  width: 100%;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.3s ease-in-out;
