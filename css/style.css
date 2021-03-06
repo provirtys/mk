@@ -14,6 +14,10 @@ body {
   background-color: black;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .header {
   border-bottom: 1px solid #d4d4d4;
 }
@@ -586,9 +590,6 @@ body {
 }
 
 @media (max-width: 576px) {
-  body.lock {
-    overflow: hidden;
-  }
   .container {
     padding-left: 20px;
     padding-right: 20px;
@@ -804,4 +805,8 @@ body {
 
 .modal--visible {
   display: block;
+}
+
+.btn {
+  cursor: pointer;
 }

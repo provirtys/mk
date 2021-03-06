@@ -10,6 +10,9 @@ body {
 	font-family: Roboto;
 	font-size: 14px;
 	background-color: black;
+	&.lock{
+		overflow: hidden;
+	}
 }
 
 .header {
@@ -420,9 +423,7 @@ body {
 	}
 }
 @media (max-width: 576px) {
-	body.lock {
-		overflow: hidden;
-	}
+
 	.container {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -599,4 +600,7 @@ body {
 
 .modal--visible {
 	display: block;
+}
+.btn{
+	cursor: pointer;
 }
