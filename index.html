@@ -15,9 +15,9 @@
 <body>
 	<section class="header">
 		<div class="header__container container">
-			<div class="header__logo">
+			<a href="##" class="header__logo">
 				<img src="img/icons/MKlogo.png" alt="logo">
-			</div>
+			</a>
 			<div class="header__menu">
 				<a href="#movie" class="header__item">О фильме</a>
 				<a href="#people" class="header__item">Актеры</a>
@@ -44,7 +44,7 @@
 		<div class="movie__container container">
 			<div class="movie__poster">
 				<img src="img/poster.png" alt="">
-				<div><a href="#" class="movie__trailer1 trailer">Посмотреть трейлер</a></div>
+				<div><a href="#" data-path="form-popup" class="movie__trailer1 trailer btn">Посмотреть трейлер</a></div>
 			</div>
 			<div class="movie__about">
 				<div class="movie__title">Мортал Комбат</div>
@@ -87,7 +87,7 @@
 						<div class="movie__rating-percent">93%</div>
 						<div class="movie__rating-text">Рейтинг ожидания</div>
 					</div>
-					<a href="#" class="movie__trailer2 trailer">Посмотреть трейлер</a>
+					<a href="##" data-path="form-popup" class="movie__trailer2 trailer btn">Посмотреть трейлер</a>
 				</div>
 			</div>
 		</div>
@@ -284,9 +284,16 @@
 	<section class="footer">
 		<div class="footer__container container">
 			<div class="footer__rights">© 2021 Все права защищены</div>
-			<div class="footer__madeby">Made by xenista</div>
+			<div class="footer__madeby">Made by provirtys</div>
 		</div>
 	</section>
+	<div class="modals">
+		<div class="modal-overlay">
+			<div class="modal modal--1" data-target="form-popup">
+				<iframe class="video" width="600" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="js/script.js"></script>

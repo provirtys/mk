@@ -375,8 +375,8 @@ body {
   font-size: 16px;
   line-height: 19px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 275px;
-          flex: 1 0 275px;
+      -ms-flex: 1 1 275px;
+          flex: 1 1 275px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,6 +527,9 @@ body {
   .movie {
     padding-top: 30px;
   }
+  .movie__poster {
+    margin-right: 0;
+  }
   .movie__trailer1 {
     display: inline-block;
   }
@@ -576,6 +579,10 @@ body {
             flex: 0 0 calc(50% - 30px);
     margin-bottom: 30px;
   }
+  .video {
+    width: 410px;
+    height: 224px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -620,17 +627,19 @@ body {
     height: 100%;
     z-index: 2;
     background-color: black;
-    font-size: 18px;
     line-height: 21px;
     overflow: auto;
     padding-top: 131px;
     padding-bottom: 131px;
+    font-size: 0;
   }
   .header__item {
     margin-left: 0;
   }
   .header__burger-menu a {
     margin-bottom: 18px;
+    -webkit-transition: none;
+    transition: none;
   }
   .header__burger-menu span {
     width: 100px;
@@ -642,6 +651,7 @@ body {
   }
   .header__burger-menu.active {
     top: 0;
+    font-size: 18px;
   }
   .header__burger {
     display: block;
@@ -703,6 +713,10 @@ body {
   .news__row:last-child {
     margin-bottom: 0px;
   }
+  .video {
+    width: 368px;
+    height: 204px;
+  }
 }
 
 .slider > :not(.selected) {
@@ -712,4 +726,82 @@ body {
 .news__arrow.disable {
   pointer-events: none;
   opacity: 0.5;
+}
+
+@media (max-width: 430px) {
+  .video {
+    width: 315px;
+    height: 184px;
+  }
+}
+
+@media (max-width: 360px) {
+  .news__item {
+    -ms-flex-preferred-size: 220px;
+        flex-basis: 220px;
+  }
+  .people__item {
+    padding-right: 0;
+  }
+  section {
+    width: 103%;
+  }
+  .video {
+    width: 270px;
+    height: 159px;
+  }
+}
+
+.backward {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 105vh;
+  width: 105%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.modal-overlay--visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+  display: block;
 }
