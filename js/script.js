@@ -74,6 +74,7 @@ btns.forEach((el) => {
 		document.querySelector('.video').setAttribute('src','https://www.youtube.com/embed/s8J-22E6mpk');
 		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
 		modalOverlay.classList.add('modal-overlay--visible');
+		document.body.classList.add('lock');
 	});
 });
 
@@ -83,6 +84,7 @@ modalOverlay.addEventListener('click', (e) => {
 	if (e.target == modalOverlay) {
 		modalOverlay.classList.remove('modal-overlay--visible');
 		document.querySelector('.video').setAttribute('src','');
+		document.body.classList.remove('lock');
 		modals.forEach((el) => {
 			el.classList.remove('modal--visible');
 		});
