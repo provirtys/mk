@@ -17,6 +17,8 @@ $(document).ready(function() {
 		$('.actorsgroup').not(this).removeClass('selected');
 		$('.people__titles span').not(this).css('color','grey');
 	});
+
+	//новости
 	if($(window).width()<=576){
 		$('.news__row-container').addClass('slider');
 		$('.slider>div:first-child').addClass('news__selected');
@@ -27,7 +29,6 @@ $(document).ready(function() {
 		$('.news__arrow').removeClass('disable');
 	}
 
-	
 	$(window).resize(function(){
 		if(($(window).width()<=576)&& (!$('.news__row-container').hasClass('slider'))){
 			$('.news__row-container').addClass('slider');
@@ -42,22 +43,20 @@ $(document).ready(function() {
 		});
 
 	$('.news__arrow').click(function (event) {
-		// event.preventDefault();
 		if($('.news__arrow').hasClass('backward')){
-			$('.news__item.news__selected').prev().addClass('news__selected');
-			$('.news__item.news__selected:last').removeClass('news__selected');
-			if($('.news__item:first').hasClass('news__selected')){
+			$('.news__column:first').addClass('news__selected');
+			$('.news__column.news__selected:last').removeClass('news__selected');
+			if($('.news__column:first').hasClass('news__selected')){
 				$('.news__arrow').removeClass('backward');
 			}
 		}
 		else{
 			$('.news__selected').next().addClass('news__selected');
-			$('.slider .news__item.news__selected:first').removeClass('news__selected');
+			$('.slider .news__column.news__selected:first').removeClass('news__selected');
 			if($('.news__arrow').prev().hasClass('news__selected')){
 				$(this).addClass('backward');
 			}
 		}
-		// return false;
 	});
 });
 
@@ -73,7 +72,7 @@ btns.forEach((el) => {
 		modals.forEach((el) => {
 			el.classList.remove('modal--visible');
 		});
-		document.querySelector('.video').setAttribute('src','https://www.youtube.com/embed/s8J-22E6mpk');
+		document.querySelector('.video').setAttribute('src','https://www.youtube.com/embed/s8J-22E6mpk?autoplay=1');
 		document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible');
 		modalOverlay.classList.add('modal-overlay--visible');
 		document.body.classList.add('lock');
@@ -92,3 +91,12 @@ modalOverlay.addEventListener('click', (e) => {
 		});
 	}
 });
+
+document.querySelector('.modal__close').addEventListener('click', (e) => {
+	modalOverlay.classList.remove('modal-overlay--visible');
+		document.querySelector('.video').setAttribute('src','');
+		document.body.classList.remove('lock');
+		modals.forEach((el) => {
+			el.classList.remove('modal--visible');
+		});
+})

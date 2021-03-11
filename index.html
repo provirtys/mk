@@ -44,50 +44,63 @@
 		<div class="movie__container container">
 			<div class="movie__poster">
 				<img src="img/poster.png" alt="">
+				
 				<div><a  data-path="form-popup" class="movie__trailer1 trailer btn">Посмотреть трейлер</a></div>
 			</div>
 			<div class="movie__about">
-				<div class="movie__title">Мортал Комбат</div>
+				<div class="movie__title"><p>Мортал Комбат</p></div>
 				<div class="movie__undertitle">
 					<p>Mortal Kombat <span class="movie__age">18+</span></p>
 				</div>
-				<div class="movie__text">Боец смешанных единоборств Коул Янг (Льюис Тан), обладающий таинственной меткой
-					в виде дракона, оказывается мишенью для Саб-Зиро (Джо Таслим) — воина из Внешнего Мира. Желая спасти
-					свою семью, Коул отправляется к лорду Рейдену — богу грома и защитнику Земоного Царства. Теперь
-					герою, вместе с другими воинами, предстоит сразиться с бойцами Внешнего Мира на турнире «Мортал
-					Комбат», чтобы спасти Землю от завоевания.</div>
+				<div class="movie__text">
+					<p>	Боец смешанных единоборств Коул Янг (Льюис Тан), обладающий таинственной меткой
+						в виде дракона, оказывается мишенью для Саб-Зиро (Джо Таслим) — воина из Внешнего Мира. Желая спасти
+						свою семью, Коул отправляется к лорду Рейдену — богу грома и защитнику Земоного Царства. Теперь
+						герою, вместе с другими воинами, предстоит сразиться с бойцами Внешнего Мира на турнире «Мортал
+						Комбат», чтобы спасти Землю от завоевания.</p>
+					</div>
 				<div class="movie__general">
-					<div class="movie__general-left">
-						<div class="movie__general-left-left">
-							<p class="movie__general-item">Режиссер</p>
-							<p class="movie__general-item">Сценарий</p>
-							<p class="movie__general-item">Премьера</p>
+						<div class="movie__general-left">
+							<div class="movie__general-item">
+								<span class="movie__general-left-label">Режиссер</span>
+								<span class="movie__general-left-text">Саймон Маккуойд</span>
+							</div>
+							<div class="movie__general-item">
+								<span class="movie__general-left-label">Сценарий</span>
+								<span class="movie__general-left-text">Грег Руссо</span>
+							</div>
+							<div class="movie__general-item">
+								<span class="movie__general-left-label">Премьера</span>
+								<span class="movie__general-left-text">07.04.2021</span>
+							</div>
 						</div>
-						<div class="movie__general-left-right">
-							<p class="movie__general-item">Саймон Маккуойд</p>
-							<p class="movie__general-item">Грег Руссо</p>
-							<p class="movie__general-item">07.04.2021</p>
+						<div class="movie__general-right">
+							<div class="movie__general-item">
+								<span class="movie__general-left-label">Бюджет</span>
+								<span class="movie__general-left-text">1 000 000 $</span>
+							</div>
+							<div class="movie__general-item">
+								<span class="movie__general-left-label">Кинопрокат</span>
+								<span class="movie__general-left-text">SPPR</span>
+							</div>
+							<div class="movie__general-item">
+								<span class="movie__general-left-label">Премьера</span>
+								<span class="movie__general-left-text">08.04.2021 (РФ)</span>
+							</div>
 						</div>
-					</div>
-					<div class="movie__general-right">
-						<div class="movie__general-right-left">
-							<p class="movie__general-item">Бюджет</p>
-							<p class="movie__general-item">Кинопрокат</p>
-							<p class="movie__general-item">Премьера</p>
-						</div>
-						<div class="movie__general-right-right">
-							<p class="movie__general-item">1 000 000 $</p>
-							<p class="movie__general-item">SPPR</p>
-							<p class="movie__general-item">08.04.2021 (РФ)</p>
-						</div>
-					</div>
 				</div>
 				<div class="movie__ratingAndTrailer">
 					<div class="movie__rating">
-						<div class="movie__rating-percent">93%</div>
-						<div class="movie__rating-text">Рейтинг ожидания</div>
+						<div class="movie__rating-percent"><p>93%</p></div>
+						<div class="movie__rating-text"><p>Рейтинг <br> ожидания</p></div>
 					</div>
-					<a  data-path="form-popup" class="movie__trailer2 trailer btn">Посмотреть трейлер</a>
+					<div data-path="form-popup" class="movie__trailer2 trailer2 btn">
+						<div class="movie__trailer-logo">
+							<img src="img/icons/play.svg" alt="">
+						</div>
+						<div class="movie__trailer-text">Посмотреть трейлер</div>
+					</div>
+					<!-- <a  data-path="form-popup" class="movie__trailer2 trailer btn">Посмотреть трейлер</a> -->
 				</div>
 			</div>
 		</div>
@@ -256,26 +269,33 @@
 			<div class="news__title">Новости по теме</div>
 			<div class="news__row">
 				<div class="news__row-container">
-				<div class="news__item news__item1 ">
-					<div class="news__item-date">18 февраля 2021</div>
-					<a href="#" class="news__item-text">«Прикончи его!»: Вышел трейлер новой экранизации «Mortal Kombat»</a>
+				<div class="news__column">
+					<div class="news__item news__item1 ">
+						<div class="news__item-date">18 февраля 2021</div>
+						<a href="#" class="news__item-text">«Прикончи его!»: Вышел трейлер новой экранизации «Mortal Kombat»</a>
+					</div>
 				</div>
-				<div class="news__item news__item2">
-					<div class="news__item-date">15 февраля 2021</div>
-					<a href="#" class="news__item-text">Режиссер Саймон Маккуойд и актер Хироюки Санада рассказывают о новом
-						«Мортал Комбат». А мы смотрим на первые кадры!</a>
+				<div class="news__column">
+					<div class="news__item news__item2">
+						<div class="news__item-date">15 февраля 2021</div>
+						<a href="#" class="news__item-text">Режиссер Саймон Маккуойд и актер Хироюки Санада рассказывают о новом
+							«Мортал Комбат». А мы смотрим на первые кадры!</a>
+					</div>
 				</div>
-				<div class="news__item news__item3">
-					<div class="news__item-date">1 января 2021</div>
-					<a href="#" class="news__item-text">Что смотреть в 2021 году: 50 самых ожидаемых фильмов</a>
+				<div class="news__column">
+					<div class="news__item news__item3">
+						<div class="news__item-date">1 января 2021</div>
+						<a href="#" class="news__item-text">Что смотреть в 2021 году: 50 самых ожидаемых фильмов</a>
+					</div>
 				</div>
-				<div class="news__item news__item4">
-					<div class="news__item-date">6 марта 2020</div>
-					<a href="#" class="news__item-text">Реалистичные драки и минимум спецэффектов: Что было на съемках
-						«Смертельной битвы»</a>
+				<div class="news__column">
+					<div class="news__item news__item4">
+						<div class="news__item-date">6 марта 2020</div>
+						<a href="#" class="news__item-text">Реалистичные драки и минимум спецэффектов: Что было на съемках
+							«Смертельной битвы»</a>
+					</div>
 				</div>
 				<a href="javascript:void(0)" class="news__arrow">
-					
 					<img src="img/icons/arrow.svg" alt="">
 				</a>
 			</div>
@@ -291,7 +311,8 @@
 	<div class="modals">
 		<div class="modal-overlay">
 			<div class="modal modal--1" data-target="form-popup">
-				<iframe class="video" width="600" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<img class="modal__close" src="img/icons/close.svg" alt="">
 			</div>
 		</div>
 	</div>
